@@ -1,0 +1,28 @@
+//utils
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+//base
+@import "./base/base";
+@import "./base/typography";
+
+
+//components
+@import "./components/buttons";
+
+//layout
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+//pages
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/projet";
+
+body{
+    background-color: rgb(128, 33, 33);
+}
