@@ -6,18 +6,19 @@
     <meta charset="utf-8" />
     <script src="https://kit.fontawesome.com/44fa887b66.js" crossorigin="anonymous"></script>
     <title>La palette du goût</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 
 <body>
-    <header class="restaurants">
-        <h1> <i class="fa-solid fa-arrow-left"></i>
-            <img src="images/logo/ohmyfood.png" alt="logos">
+    <header class="header-restaurants">
+        <h1 class="header-restaurants__titre"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="./images/logo/ohmyfood.png" alt="logos">
         </h1>
     </header>
 
+
     <article>
-        <img src="images/restaurants/Menilmontant.jpg" alt="photo">
+        <img src="./images/restaurants/Menilmontant.jpg" alt="photo">
     </article>
 
     <nav>
@@ -25,87 +26,96 @@
             <h2>La palette du goût<i class="fa-regular fa-heart"></i></h2>
 
             <div id="conteneur-entrees">
-                <figure>
+                <figure class="choix">
                     <h2>ENTREES</h2>
-                    <div class="menu">
-                        <h3>Fricasée d'escargot</h3>
-                        <p>Au piment d'espelette</p>
-                        <span>25<i class="fa-solid fa-euro-sign"></i></span>
-
+                    <div class="choix-menu">
+                        <h3>Fricassée d'escargot</h3>
+                        <div class="choix-menu__paragraphe">
+                            <p>Au piment d'espelette</p>
+                            <span>25<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
 
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Foie gras de canard mi-cuit</h3>
-                        <p>Et ses copeaux de truffe noire</p>
-                        <span>35<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Et ses copeaux de truffe noire</p>
+                            <span>35<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
 
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Oeuf au plat</h3>
-                        <p>Assaisonné à la truffe sur lit de ...</p>
-                        <span>20<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                            <span>20<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
                 </figure>
             </div>
 
             <div id="conteneur-plats">
-                <figure>
+                <figure class="choix">
                     <h2>PLATS</h2>
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Filet de boeuf aux herbes </h3>
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                        <span>40<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                            <span>40<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
 
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Parmentier de queue de boeuf</h3>
-                        <p>A la truffe noire sur sa purée de panais</p>
-                        <span>35<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>À la truffe noire sur sa purée de panais</p>
+                            <span>35<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
 
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Filet de Turbot </h3>
-                        <p>aUX AGRUMES</p>
-                        <span>44<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Aux agrumes</p>
+                            <span>44<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
                 </figure>
             </div>
 
             <div id="conteneur-desserts">
-                <figure>
+                <figure class="choix">
                     <h2>DESSERTS</h2>
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Paris-Brest</h3>
-                        <p>Revisité</p>
-                        <span>18<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Revisité</p>
+                            <span>18<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
 
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Macaron au chocolat d'exception</h3>
-                        <p>Et glace à la vanille de Madagascar</p>
-                        <span>22<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Et glace à la vanille de Madagascar</p>
+                            <span>22<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
 
-                    <div class="menu">
+                    <div class="choix-menu">
                         <h3>Mousse au chocolat</h3>
-                        <p>Au piment d'espelette etvà la truffe noire</p>
-                        <span>23<i class="fa-solid fa-euro-sign"></i></span>
-
+                        <div class="choix-menu__paragraphe">
+                            <p>Au piment d'espelette et à la truffe noire</p>
+                            <span>23<i class="fa-solid fa-euro-sign"></i></span>
+                        </div>
                         <p><i class="fa-solid fa-check"></i></p>
                     </div>
                 </figure>
@@ -120,7 +130,7 @@
                 <h2>ohmyfood</h2>
             </div>
             <div class="footer-menu">
-                <ul>
+                <ul class="footer-menu__liste">
                     <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
                     <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                     <li>Mentions légales</li>

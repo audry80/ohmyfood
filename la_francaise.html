@@ -6,106 +6,151 @@
     <meta charset="utf-8" />
     <script src="https://kit.fontawesome.com/44fa887b66.js" crossorigin="anonymous"></script>
     <title>La francaise</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 
 <body>
-    <header class="restaurants">
-        <h1><i class="fa-solid fa-arrow-left"></i>
-            <img src="images/logo/ohmyfood.png" alt="logos">
+    <header class="header-restaurants">
+        <h1 class="header-restaurants__titre"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="./images/logo/ohmyfood.png" alt="logos">
         </h1>
     </header>
 
     <article>
-        <img src="images/restaurants/Cite rouge.jpg" alt="photo">
+        <img src="./images/restaurants/Cite rouge.jpg" alt="photo">
     </article>
 
     <nav>
         <div id="conteneur-francaise">
-            <h2>à la française<i class="fa-regular fa-heart"></i></h2>
+            <h2>À la française<i class="fa-regular fa-heart"></i></h2>
 
             <div id="conteneur-entrees">
-                <figure>
-                    <h2>entreés</h2>
-                    <div class="menu">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
-                        <span>25<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                <figure class="choix">
+                    <h2>ENTREÉS</h2>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Tartare de poulpe acidulé</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Aux zests d'orange </p>
+                                <span>25<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3  class="choix-menu-bloc__titre">Velouté de légumes d"antan</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Carotte, panais, topinambour</p>
+                                <span>35<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
 
-                    <div class="menu">
-                        <h3>Velouté de légumes d"antan</h3>
-                        <p>Carotte,panais;topinambour</p>
-                        <span>35<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
-                    </div>
-
-                    <div class="menu">
-                        <h3>Soupe à l'oigon</h3>
-                        <p>Revisitée</p>
-                        <span>20<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3  class="choix-menu-bloc__titre">Soupe à l'oigon</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Revisitée</p>
+                                <span>20<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
                 </figure>
             </div>
 
             <div id="conteneur-plats">
-                <figure>
+                <figure class="choix">
                     <h2>PLATS</h2>
-                    <div class="menu">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <p>Accompagnées d'une purée de panais</p>
-                        <span>40<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Coquilles Saint-Jacques</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Accompagnées d'une purée de panais</p>
+                                <span>40<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
 
-                    <div class="menu">
-                        <h3>Magret de canard</h3>
-                        <p>Et parmentier de pommes de terres</p>
-                        <span>35<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Magret de canard</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Et parmentier de pommes de terres</p>
+                                <span>35<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
-                    <div class="menu">
-                        <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                        <p>Sur son lit fr gnocchis aux légumes</p>
-                        <span>44<i class="fa-solid fa-euro-sign"></i></span>
 
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Pigeonneau d'Ille-et-Vilaine</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <span>44<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
                 </figure>
             </div>
 
             <div id="conteneur-desserts">
-                <figure>
+                <figure class="choix">
                     <h2>DESSERTS</h2>
-                    <div class="menu">
-                        <h3>Pétales de violettes glacés</h3>
-                        <p>Et purée de noisettes</p>
-                        <span>18<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Pétales de violettes glacés</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Et purée de noisettes</p>
+                                <span>18<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
 
-                    <div class="menu">
-                        <h3>Fondant au chocolat</h3>
-                        <p>Revisité</p>
-                        <span>22<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Fondant au chocolat</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Revisité</p>
+                                <span>22<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
 
-                    <div class="menu">
-                        <h3>Millefeuille croustillant</h3>
-                        <p>Myrtilles et pâte d'amande</p>
-                        <span>23<i class="fa-solid fa-euro-sign"></i></span>
-
-                        <p><i class="fa-solid fa-check"></i></p>
+                    <div class="choix-menu">
+                        <div class="choix-menu-bloc">
+                            <h3 class="choix-menu-bloc__titre">Millefeuille croustillant</h3>
+                            <div class="choix-menu-bloc__paragraphe">
+                                <p>Myrtilles et pâte d'amande</p>
+                                <span>23<i class="fa-solid fa-euro-sign"></i></span>
+                            </div>
+                        </div>
+                        <div class="choix-menu-check">
+                            <p><i class="fa-solid fa-check"></i></p>
+                        </div>
                     </div>
                 </figure>
             </div>
@@ -119,7 +164,7 @@
                 <h2>ohmyfood</h2>
             </div>
             <div class="footer-menu">
-                <ul>
+                <ul class="footer-menu__liste">
                     <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
                     <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                     <li>Mentions légales</li>
