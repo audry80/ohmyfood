@@ -23,6 +23,12 @@
 @import "./pages/about";
 @import "./pages/projet";
 
+
+
 body{
-    background-color: rgb(128, 33, 33);
+    /*background-color:violet;*/
+    background-color: adjust-hue($couleur-primaire,100%);
+    @include polices-text;
+    margin: 0;
+    
 }

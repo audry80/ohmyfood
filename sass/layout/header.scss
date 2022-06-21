@@ -1,0 +1,38 @@
+//page principal
+.header-index {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    &__titre {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+.header-index img {
+    width: 50%;
+}
+
+//les menus
+.header-restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+
+    &__titre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.header-restaurants img {
+    width: 50%;
+    margin-right: 50px;
+}

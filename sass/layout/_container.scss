@@ -1,0 +1,52 @@
+//footer
+#conteneur-footer {    
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.footer-menu__liste {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100px;
+    padding-left: 0;
+}
+
+.footer-menu .fa-utensils {
+    margin-right: 10px;
+    color: white;
+}
+
+.footer-menu .fa-handshake-angle {
+    margin-right: 10px;
+    color: white;
+}
+
+.footer-a:visited{
+     all: unset;   
+    display: contents;
+    color: white
+}
+
+
+//main section
+.index-figure__image img {
+    @include images;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -5px;
+}
+
+//les menu article
+article img {
+    @include images;
+}
+
+//conteneur francais
+#conteneur-francaise,
+#conteneur-enchantee,
+#conteneur-palette-gout,
+#conteneur-delices-sens {
+    @include conteneur;
+}
