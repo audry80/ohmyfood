@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=work.css.map */
+.index-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.index-aside__titre {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.index-aside__paragraphe {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.index-section__paragraphe {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  border: 2px solid gray;
+  padding: 15px 0px;
+}
+
+.fa-location-dot {
+  margin-right: 20px;
+  margin-left: -20px;
+}
+
+.index-nav {
+  padding-left: 10px;
+  margin: 0;
+  height: 220px;
+}
+
+.index-nav__menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.index-nav__menu li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: -40px;
+}
+
+.fa-1 {
+  @in;
+}
+
+.index-figure {
+  margin: 0;
+}
+
+.index-figure__bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*# sourceMappingURL=work.css.map */
