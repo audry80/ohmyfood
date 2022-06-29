@@ -32,7 +32,11 @@
     justify-content: space-between;
 }
 
-//menu entrees
+//menu nav
+@mixin conteneur-menu {
+    margin:0 0 50px 0;
+}
+
 @mixin menu {
     @extend %flex-row;
     justify-content: space-between;

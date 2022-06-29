@@ -21,6 +21,10 @@
 
 //page menu
 //la francaise
+.conteneur-francaise-entrees{
+    @include conteneur-menu;
+}
+
 .francaise-entrees {
     @include menu;
 
