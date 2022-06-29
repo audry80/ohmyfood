@@ -1,32 +1,30 @@
 //page principal
 .header-index {
-    display: flex;
+    @extend %flex-row;
     justify-content: center;
-    background-color: white;
+    background-color: $quatro;
 
     &__titre {
-        display: flex;
+        @extend %flex-row;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-bottom: $margin+5px;
     }
-}
 
-.header-index img {
-    width: 50%;
+    img {
+        width: $width;
+    }
 }
 
 //les menus
 .header-restaurants {
-    display: flex;
-    flex-direction: row;
+    @extend %flex-row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: white;
+    width: $width +50%;
+    background-color: $quatro;
 
     &__titre {
-        display: flex;
-        flex-direction: row;
+        @extend %flex-row;
         justify-content: space-around;
         align-items: center;
     }

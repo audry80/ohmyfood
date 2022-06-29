@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,oBAAoB,CAAC,EAAE,CAAA;EACvB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAC7B;;AAED,AAAA,MAAM,CAAA;EACF,MAAM,EAAC,UAAU;CACpB",
-    "sources": [
-        "projet.scss"
-    ],
-    "names": [],
-    "file": "projet.css"
-}
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"projet.css"}

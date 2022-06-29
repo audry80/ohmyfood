@@ -1,40 +1,43 @@
-@import url("https://fonts.googleapis.com/css2? family= Raleway:ital,wght@0,200;0,300;1,100;1,200 & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Raleway:ital,wght@0,200;0,300;1,100;1,200 & family= Roboto:ital,wght@0,100;0,300;0,400; 0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900 & display=swap");
-.index-aside__button {
-  background-color: #9356DC;
-  border: 2px solid #9356DC;
-  border-radius: 30px;
-  color: white;
-  padding: 10px;
+/*@mixin check-hover{
+    border: solid 2px $Tertiaire;
+    background-color: $Tertiaire;
+    color: $quatro;
+    border-radius: 0px 10px 10px 0px;
+    height: 60px;
+    width: 15%;
+    text-align: center;
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? famille= Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400 & display=swap");
+.index-menilmontant-figure__bloc, .index-folie-mericourt-figure__bloc, .index-cite-rouge-figure__bloc, .index-charonne-figure__bloc, .index-nav__menu-liste, .index-section__paragraphe, .delices-sens-entrees .delices-sens-entrees-bloc__paragraphe, .delices-sens-entrees, .palette-gout-entrees .palette-gout-entrees-bloc__paragraphe, .palette-gout-entrees, .enchantee-entrees .enchantee-entrees-bloc__paragraphe, .enchantee-entrees, .francaise-entrees .francaise-entrees-bloc__paragraphe, .francaise-entrees, .header-restaurants__titre, .header-restaurants, .header-index__titre, .header-index {
+  display: flex;
+  flex-direction: row;
+}
+
+.index-nav__menu, .index-aside, .footer-menu__liste {
+  display: flex;
+  flex-direction: column;
 }
 
 .header-index {
-  display: flex;
   justify-content: center;
   background-color: white;
 }
-
 .header-index__titre {
-  display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
-
 .header-index img {
   width: 50%;
 }
 
 .header-restaurants {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: white;
 }
-
 .header-restaurants__titre {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -52,111 +55,144 @@
 
 .footer-menu__liste {
   list-style-type: none;
-  display: flex;
   justify-content: space-around;
-  flex-direction: column;
   height: 100px;
   padding-left: 0;
 }
+.footer-menu__liste .footer-a {
+  color: white;
+  display: contents;
+  all: unset;
+}
 
-.footer-menu .fa-utensils {
+.footer-menu .fa-utensils, .footer-menu .fa-handshake-angle {
   margin-right: 10px;
+  color: white;
 }
 
-.footer-menu .fa-handshake-angle {
-  margin-right: 10px;
-}
-
-.index-figure__image img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  margin-bottom: -5px;
-}
-
-article img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-#conteneur-francaise,
-#conteneur-enchantee,
-#conteneur-palette-gout,
-#conteneur-delices-sens {
+#conteneur-francaise, #conteneur-delices-sens, #conteneur-palette-gout, #conteneur-enchantee {
   border: solid 2px black;
   border-radius: 40px 40px 0 0;
   margin: -30px 0 0 0;
-  padding: 10px 20px 0 20px;
+  padding: 10px;
+}
+#conteneur-francaise h2, #conteneur-delices-sens h2, #conteneur-palette-gout h2, #conteneur-enchantee h2 {
+  display: flex;
+  justify-content: space-between;
 }
 
-.choix-menu {
-  display: flex;
-  flex-direction: row;
+.francaise-entrees {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  /* .francaise-entrees-check:hover {
+       @include check-hover
+   }*/
+}
+.francaise-entrees .francaise-entrees-bloc {
+  width: 100%;
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
+}
+.francaise-entrees .francaise-entrees-bloc__paragraphe {
+  justify-content: space-between;
+  align-items: center;
+}
+.francaise-entrees .francaise-entrees-bloc__paragraphe p {
+  margin: 5px 0 10px 5px;
+}
+.francaise-entrees .francaise-entrees-bloc__paragraphe span {
+  margin-right: 20px;
+}
+.francaise-entrees .francaise-entrees-bloc__titre {
+  margin: 5px 0 0 5px;
+}
+
+.enchantee-entrees {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-
-.choix-menu-bloc {
+.enchantee-entrees .enchantee-entrees-bloc {
   width: 100%;
-  border: solid 2px black;
+  border: solid 2px white;
   border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
 }
-
-.choix-menu-bloc__paragraphe {
-  display: flex;
-  flex-direction: row;
+.enchantee-entrees .enchantee-entrees-bloc__paragraphe {
   justify-content: space-between;
   align-items: center;
 }
-
-.choix-menu-bloc__paragraphe p {
+.enchantee-entrees .enchantee-entrees-bloc__paragraphe p {
   margin: 5px 0 10px 5px;
 }
-
-.choix-menu-bloc__titre {
+.enchantee-entrees .enchantee-entrees-bloc__paragraphe span {
+  margin-right: 20px;
+}
+.enchantee-entrees .enchantee-entrees-bloc__titre {
   margin: 5px 0 0 5px;
 }
 
-.choix-menu-check {
-  border: solid 2px #99E2D0;
-  background-color: #99E2D0;
-  color: white;
-  border-radius: 0px 10px 10px 0px;
-  height: 60px;
-  width: 15%;
-  text-align: center;
-}
-
-.index-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.palette-gout-entrees {
+  justify-content: space-between;
   align-items: center;
-  height: 220px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 10px;
+}
+.palette-gout-entrees .palette-gout-entrees-bloc {
+  width: 100%;
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
+}
+.palette-gout-entrees .palette-gout-entrees-bloc__paragraphe {
+  justify-content: space-between;
+  align-items: center;
+}
+.palette-gout-entrees .palette-gout-entrees-bloc__paragraphe p {
+  margin: 5px 0 10px 5px;
+}
+.palette-gout-entrees .palette-gout-entrees-bloc__paragraphe span {
+  margin-right: 20px;
+}
+.palette-gout-entrees .palette-gout-entrees-bloc__titre {
+  margin: 5px 0 0 5px;
 }
 
-.index-aside__titre {
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
+.delices-sens-entrees {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
-
-.index-aside__paragraphe {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.delices-sens-entrees .delices-sens-entrees-bloc {
+  width: 100%;
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
+}
+.delices-sens-entrees .delices-sens-entrees-bloc__paragraphe {
+  justify-content: space-between;
+  align-items: center;
+}
+.delices-sens-entrees .delices-sens-entrees-bloc__paragraphe p {
+  margin: 5px 0 10px 5px;
+}
+.delices-sens-entrees .delices-sens-entrees-bloc__paragraphe span {
+  margin-right: 20px;
+}
+.delices-sens-entrees .delices-sens-entrees-bloc__titre {
+  margin: 5px 0 0 5px;
 }
 
 .index-section__paragraphe {
-  display: flex;
   justify-content: center;
   margin: 0;
-  border: 2px solid gray;
+  border: 2px solid #e8f9f5;
+  background-color: #278870;
   padding: 15px 0px;
 }
 
@@ -165,37 +201,47 @@ article img {
   margin-left: -20px;
 }
 
+.index-aside {
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.index-aside__titre {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.index-aside__paragraphe {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .index-nav {
   padding-left: 10px;
   height: 300px;
   padding-top: 10px;
   background-color: white;
 }
-
 .index-nav__menu {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   height: 100px;
 }
-
 .index-nav__menu-liste {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   width: 90%;
   margin-left: -40px;
-  border: solid 2px #99E2D0;
+  border: solid 2px #e8f9f5;
   border-radius: 15px;
   padding: 15px 50px 15px 0px;
-  margin-bottom: 10px;
-  background-color: #99E2D0;
+  margin-bottom: 20px;
+  background-color: #e8f9f5;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.1);
 }
-
-.fa-1,
-.fa-2,
-.fa-3 {
+.index-nav .fa-1, .index-nav .fa-3, .index-nav .fa-2 {
   background-color: #9356DC;
   font-size: 10px;
   border-radius: 30px;
@@ -206,25 +252,20 @@ article img {
   color: white;
   margin-left: -35px;
 }
-
 #index-restaurant {
   margin-top: 40px;
 }
-
 #index-restaurant h2 {
   margin-left: 15px;
 }
 
-.index-figure {
+.index-menilmontant-figure, .index-folie-mericourt-figure, .index-cite-rouge-figure, .index-charonne-figure {
   margin: 0 10px 20px 10px;
   border: solid 2px white;
   border-radius: 20px;
-  /*height: 220px;*/
+  box-shadow: 1px 0px 11px 2px rgba(0, 0, 0, 0.3);
 }
-
-.index-figure__bloc {
-  display: flex;
-  flex-direction: row;
+.index-menilmontant-figure__bloc, .index-folie-mericourt-figure__bloc, .index-cite-rouge-figure__bloc, .index-charonne-figure__bloc {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -232,39 +273,34 @@ article img {
   background-color: white;
   border-radius: 0px 0px 20px 20px;
 }
+.index-menilmontant-figure__bloc-text h3 {
+  margin-bottom: -10px;
+}
+.index-menilmontant-figure img, .index-folie-mericourt-figure img, .index-cite-rouge-figure img, .index-charonne-figure img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: -5px;
+}
 
-.index-figure__bloc-text h3 {
+.index-charonne-figure__bloc-text h3 {
+  margin-bottom: -10px;
+}
+
+.index-cite-rouge-figure__bloc-text h3 {
+  margin-bottom: -10px;
+}
+
+.index-folie-mericourt-figure__bloc-text h3 {
   margin-bottom: -10px;
 }
 
 .fa-heart:hover {
   color: #9356DC;
-  /*background-color: $couleur-primarire;*/
-}
-
-#conteneur-francaise h2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-h1,
-h2,
-h3 {
-  font-family: raleway, "sans-serif";
-}
-
-.conteneur-francaise h2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.choix {
-  margin: 0;
 }
 
 body {
-  background-color: violet;
-  font-family: raleway, Roboto, "sans-serif";
+  background-color: #e8f9f5;
   margin: 0;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

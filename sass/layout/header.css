@@ -1,9 +1,7 @@
 .header-index {
-  display: flex;
-  justify-content: center;
+  @e justify-content: center;
   background-color: white;
 }
-
 .header-index__titre {
   display: flex;
   justify-content: center;
@@ -22,7 +20,6 @@
   width: 100%;
   background-color: white;
 }
-
 .header-restaurants__titre {
   display: flex;
   flex-direction: row;
@@ -33,5 +30,4 @@
 .header-restaurants img {
   width: 50%;
   margin-right: 50px;
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

@@ -1,9 +1,72 @@
+//index section2
+//menilmontant
+.index-menilmontant-figure {
+    margin: 0 10px 20px 10px;
+    border: solid 2px $quatro;
+    border-radius: 20px;
+    box-shadow: 1px 0px 11px 2px rgba(0, 0, 0, 30%);
 
-.conteneur-francaise h2{
-display: flex;
-justify-content: space-between;
+    &__bloc {
+        @extend %flex-row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        background-color: $quatro;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    &__bloc-text h3 {
+        margin-bottom: -10px;
+    }
+
+    img {
+        @include index-images;
+        border-radius: 15px 15px 0 0;
+        margin-bottom: -5px;
+    }
 }
 
-.choix{
-    margin:0 0 50px 0;
+
+//charonne
+.index-charonne-figure {
+    @extend .index-menilmontant-figure;
+}
+
+.index-charonne-figure__bloc {
+    @extend .index-menilmontant-figure__bloc;
+}
+
+.index-charonne-figure__bloc-text h3 {
+    margin-bottom: -10px;
+}
+
+//cite-rouge
+.index-cite-rouge-figure {
+    @extend .index-menilmontant-figure;
+}
+
+.index-cite-rouge-figure__bloc {
+    @extend .index-menilmontant-figure__bloc;
+}
+
+.index-cite-rouge-figure__bloc-text h3 {
+    margin-bottom: -10px;
+}
+
+//folie-mericourt
+.index-folie-mericourt-figure {
+    @extend .index-menilmontant-figure;
+}
+
+.index-folie-mericourt-figure__bloc {
+    @extend .index-menilmontant-figure__bloc;
+}
+
+.index-folie-mericourt-figure__bloc-text h3 {
+    margin-bottom: -10px;
+}
+
+.fa-heart:hover {
+    color: $primaire;
 }
