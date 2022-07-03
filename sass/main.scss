@@ -26,6 +26,7 @@
 
 
 body {
-  background-color:lighten($tertiaire, 20);  
+  background-color:#f3f3f3;  
   margin: 0;
+  @extend %font-family-text;
  }

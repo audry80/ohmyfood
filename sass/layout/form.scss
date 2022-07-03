@@ -1,3 +1,17 @@
+h1,
+h2,
+h3 {
+    @extend %font-family-titre;
+}
+
+
+//article menu
+.menu-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
 //menus les conteneur 
 #conteneur-francaise {
     @include conteneur;
@@ -20,112 +34,163 @@
 }
 
 //page menu
-//la francaise
-.conteneur-francaise-entrees{
+//entree
+.conteneur-francaise-entrees,
+.conteneur-enchantee-entrees,
+.conteneur-palette-gout-entrees,
+.conteneur-delices-sens-entrees {
     @include conteneur-menu;
 }
 
-.francaise-entrees {
-    @include menu;
-
-    .francaise-entrees-bloc {
-        @include menu-bloc;
-
-        &__paragraphe {
-            @include paragraphe;
-        }
-
-        &__paragraphe p {
-            @include paragraphe-p;
-        }
-
-        &__paragraphe span {
-            @include paragraphe-span;
-        }
-
-        &__titre {
-            @include titre;
-        }
-    }
-
-   /* .francaise-entrees-check:hover {
-        @include check-hover
-    }*/
-}
-
-
-
-//enchantee
-.enchantee-entrees {
-    @include menu;
-
-    .enchantee-entrees-bloc {
-        @include menu-bloc;
-
-        &__paragraphe {
-            @include paragraphe;
-        }
-
-        &__paragraphe p {
-            @include paragraphe-p;
-        }
-
-        &__paragraphe span {
-            @include paragraphe-span;
-        }
-
-        &__titre {
-            @include titre;
-        }
-    }
-}
-
-//palette-gout
-.palette-gout-entrees {
-    @include menu;
-
-    .palette-gout-entrees-bloc {
-        @include menu-bloc;
-
-        &__paragraphe {
-            @include paragraphe;
-        }
-
-        &__paragraphe p {
-            @include paragraphe-p;
-        }
-
-        &__paragraphe span {
-            @include paragraphe-span;
-        }
-
-        &__titre {
-            @include titre;
-        }
-    }
-}
-
-//delices-sens
+.francaise-entrees,
+.enchantee-entrees,
+.palette-gout-entrees,
 .delices-sens-entrees {
     @include menu;
 
-    .delices-sens-entrees-bloc {
-        @include menu-bloc;
+}
 
-        &__paragraphe {
-            @include paragraphe;
-        }
+.francaise-entrees-bloc,
+.enchantee-entrees-bloc,
+.palette-gout-entrees-bloc,
+.delices-sens-entrees-bloc {
+    @include menu-bloc;
+}
 
-        &__paragraphe p {
-            @include paragraphe-p;
-        }
+//a verifier pour le faire apparaitre
+.francaise-entrees-check {
+    @include check-hover;
+    display: none;
 
-        &__paragraphe span {
-            @include paragraphe-span;
-        }
-
-        &__titre {
-            @include titre;
-        }
+    .fa-check {
+        @include fa-check
     }
+}
+
+.francaise-entrees-bloc__paragraphe,
+.enchantee-entrees-bloc__paragraphe,
+.palette-gout-entrees-bloc__paragraphe,
+.delices-sens-entrees-bloc__paragraphe {
+    @include paragraphe;
+}
+
+.francaise-entrees-bloc__paragraphe p,
+.enchantee-entrees-bloc__paragraphe p,
+.palette-gout-entrees-bloc__paragraphe p,
+.delices-sens-entrees-bloc__paragraphe p {
+    @include paragraphe-p;
+}
+
+.francaise-entrees-bloc__paragraphe span,
+.enchantee-entrees-bloc__paragraphe span,
+.palette-gout-entrees-bloc__paragraphe span,
+.delices-sens-entrees-bloc__paragraphe span {
+    @include paragraphe-span;
+}
+
+.francaise-entrees-bloc__titre,
+.enchantee-entrees-bloc__titre,
+.palette-gout-entrees-bloc__titre,
+.delices-sens-entrees-bloc__titre {
+    @include titre;
+}
+
+//plats
+.conteneur-francaise-plats,
+.conteneur-enchantee-plats,
+.conteneur-palette-gout-plats,
+.conteneur-delices-sens-plats {
+    @include conteneur-menu;
+}
+
+.francaise-plats,
+.enchantee-plats,
+.palette-gout-plats,
+.delices-sens-plats {
+    @include menu;
+}
+
+.francaise-plats-bloc,
+.enchantee-plats-bloc,
+.palette-gout-plats-bloc,
+.delices-sens-plats-bloc {
+    @include menu-bloc;
+}
+
+.francaise-plats-bloc__paragraphe,
+.enchantee-plats-bloc__paragraphe,
+.palette-gout-plats-bloc__paragraphe,
+.delices-sens-plats-bloc__paragraphe {
+    @include paragraphe;
+}
+
+.francaise-plats-bloc__paragraphe p,
+.enchantee-plats-bloc__paragraphe p,
+.palette-gout-plats-bloc__paragraphe p,
+.delices-sens-plats-bloc__paragraphe p {
+    @include paragraphe-p;
+}
+
+.francaise-plats-bloc__paragraphe span,
+.enchantee-plats-bloc__paragraphe span,
+.palette-gout-plats-bloc__paragraphe span,
+.delices-sens-plats-bloc__paragraphe span {
+    @include paragraphe-span;
+}
+
+.francaise-plats-bloc__titre,
+.enchantee-plats-bloc__titre,
+.palette-gout-plats-bloc__titre,
+.delices-sens-plats-bloc__titre {
+    @include titre;
+}
+
+//desserts
+.conteneur-francaise-desserts,
+.conteneur-enchantee-desserts,
+.conteneur-palette-gout-desserts,
+.conteneur-delices-sens-desserts {
+    @include conteneur-menu;
+}
+
+.francaise-desserts,
+.enchantee-desserts,
+.palette-gout-desserts,
+.delices-sens-desserts {
+    @include menu;
+}
+
+.francaise-desserts-bloc,
+.enchantee-desserts-bloc,
+.palette-gout-desserts-bloc,
+.delices-sens-desserts-bloc {
+    @include menu-bloc;
+}
+
+.francaise-desserts-bloc__paragraphe,
+.enchantee-desserts-bloc__paragraphe,
+.palette-gout-desserts-bloc__paragraphe,
+.delices-sens-desserts-bloc__paragraphe {
+    @include paragraphe;
+}
+
+.francaise-desserts-bloc__paragraphe p,
+.enchantee-desserts-bloc__paragraphe p,
+.palette-gout-desserts-bloc__paragraphe p,
+.delices-sens-desserts-bloc__paragraphe p {
+    @include paragraphe-p;
+}
+
+.francaise-desserts-bloc__paragraphe span,
+.enchantee-desserts-bloc__paragraphe span,
+.palette-gout-desserts-bloc__paragraphe span,
+.delices-sens-desserts-bloc__paragraphe span {
+    @include paragraphe-span;
+}
+
+.francaise-desserts-bloc__titre,
+.enchantee-desserts-bloc__titre,
+.palette-gout-desserts-bloc__titre,
+.delices-sens-desserts-bloc__titre {
+    @include titre;
 }

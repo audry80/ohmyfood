@@ -1,4 +1,8 @@
 //index section2
+#index-restaurant {
+    height: 1070px;
+}
+
 //menilmontant
 .index-menilmontant-figure {
     margin: 0 10px 20px 10px;
@@ -11,13 +15,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        height: 40px;
+        height: 50px;
         background-color: $quatro;
         border-radius: 0px 0px 20px 20px;
     }
 
     &__bloc-text h3 {
-        margin-bottom: -10px;
+        margin-bottom: -15px;
     }
 
     img {
@@ -25,6 +29,29 @@
         border-radius: 15px 15px 0 0;
         margin-bottom: -5px;
     }
+
+}
+
+.nouveau {
+    border: solid 2px#1bebc9;
+    color: #057e6b;
+    background-color: #1bebc9;
+    width: 25%;
+    height: 23px;
+    text-align: center;
+    padding-top: 3px;
+    position: absolute;
+    left: 245px;
+
+
+}
+
+.fa-heart {
+    font-size: 20px;
+}
+
+.fa-heart:hover {
+    color: $primaire;
 }
 
 
@@ -38,7 +65,7 @@
 }
 
 .index-charonne-figure__bloc-text h3 {
-    margin-bottom: -10px;
+    margin-bottom: -15px;
 }
 
 //cite-rouge
@@ -51,7 +78,7 @@
 }
 
 .index-cite-rouge-figure__bloc-text h3 {
-    margin-bottom: -10px;
+    margin-bottom: -15px;
 }
 
 //folie-mericourt
@@ -64,9 +91,5 @@
 }
 
 .index-folie-mericourt-figure__bloc-text h3 {
-    margin-bottom: -10px;
-}
-
-.fa-heart:hover {
-    color: $primaire;
+    margin-bottom: -15px;
 }

@@ -1,15 +1,24 @@
-/*@mixin check-hover{
-    border: solid 2px $Tertiaire;
-    background-color: $Tertiaire;
-    color: $quatro;
-    border-radius: 0px 10px 10px 0px;
-    height: 60px;
-    width: 15%;
-    text-align: center;
-}*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? famille= Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400 & display=swap");
-.index-menilmontant-figure__bloc, .index-folie-mericourt-figure__bloc, .index-cite-rouge-figure__bloc, .index-charonne-figure__bloc, .index-nav__menu-liste, .index-section__paragraphe, .delices-sens-entrees .delices-sens-entrees-bloc__paragraphe, .delices-sens-entrees, .palette-gout-entrees .palette-gout-entrees-bloc__paragraphe, .palette-gout-entrees, .enchantee-entrees .enchantee-entrees-bloc__paragraphe, .enchantee-entrees, .francaise-entrees .francaise-entrees-bloc__paragraphe, .francaise-entrees, .header-restaurants__titre, .header-restaurants, .header-index__titre, .header-index {
+.index-menilmontant-figure__bloc, .index-folie-mericourt-figure__bloc, .index-cite-rouge-figure__bloc, .index-charonne-figure__bloc, .index-nav__menu-liste, .index-section__paragraphe, .francaise-desserts-bloc__paragraphe,
+.enchantee-desserts-bloc__paragraphe,
+.palette-gout-desserts-bloc__paragraphe,
+.delices-sens-desserts-bloc__paragraphe, .francaise-desserts,
+.enchantee-desserts,
+.palette-gout-desserts,
+.delices-sens-desserts, .francaise-plats-bloc__paragraphe,
+.enchantee-plats-bloc__paragraphe,
+.palette-gout-plats-bloc__paragraphe,
+.delices-sens-plats-bloc__paragraphe, .francaise-plats,
+.enchantee-plats,
+.palette-gout-plats,
+.delices-sens-plats, .francaise-entrees-bloc__paragraphe,
+.enchantee-entrees-bloc__paragraphe,
+.palette-gout-entrees-bloc__paragraphe,
+.delices-sens-entrees-bloc__paragraphe, .francaise-entrees,
+.enchantee-entrees,
+.palette-gout-entrees,
+.delices-sens-entrees, .header-restaurants__titre, .header-restaurants, .header-index__titre, .header-index {
   display: flex;
   flex-direction: row;
 }
@@ -17,6 +26,28 @@
 .index-nav__menu, .index-aside, .footer-menu__liste {
   display: flex;
   flex-direction: column;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Shrikhand", "cursive";
+}
+
+.index-aside__button, .francaise-button, .delices-sens-button, .palette-gout-button, .enchantee-button {
+  background-color: #9356DC;
+  border: 2px solid #9356DC;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+}
+
+.francaise-button, .delices-sens-button, .palette-gout-button, .enchantee-button {
+  margin-left: 35%;
 }
 
 .header-index {
@@ -49,7 +80,7 @@
 
 #conteneur-footer {
   color: white;
-  background-color: black;
+  background-color: #383636;
   padding: 10px 20px;
 }
 
@@ -70,134 +101,217 @@
   color: white;
 }
 
+.menu-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
 #conteneur-francaise, #conteneur-delices-sens, #conteneur-palette-gout, #conteneur-enchantee {
   border: solid 2px black;
   border-radius: 40px 40px 0 0;
   margin: -30px 0 0 0;
   padding: 10px;
+  height: 1180px;
 }
 #conteneur-francaise h2, #conteneur-delices-sens h2, #conteneur-palette-gout h2, #conteneur-enchantee h2 {
   display: flex;
   justify-content: space-between;
 }
 
-.conteneur-francaise-entrees {
+.conteneur-francaise-entrees,
+.conteneur-enchantee-entrees,
+.conteneur-palette-gout-entrees,
+.conteneur-delices-sens-entrees {
   margin: 0 0 50px 0;
 }
 
-.francaise-entrees {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  /* .francaise-entrees-check:hover {
-       @include check-hover
-   }*/
-}
-.francaise-entrees .francaise-entrees-bloc {
-  width: 100%;
-  border: solid 2px white;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
-}
-.francaise-entrees .francaise-entrees-bloc__paragraphe {
-  justify-content: space-between;
-  align-items: center;
-}
-.francaise-entrees .francaise-entrees-bloc__paragraphe p {
-  margin: 5px 0 10px 5px;
-}
-.francaise-entrees .francaise-entrees-bloc__paragraphe span {
-  margin-right: 20px;
-}
-.francaise-entrees .francaise-entrees-bloc__titre {
-  margin: 5px 0 0 5px;
-}
-
-.enchantee-entrees {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.enchantee-entrees .enchantee-entrees-bloc {
-  width: 100%;
-  border: solid 2px white;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
-}
-.enchantee-entrees .enchantee-entrees-bloc__paragraphe {
-  justify-content: space-between;
-  align-items: center;
-}
-.enchantee-entrees .enchantee-entrees-bloc__paragraphe p {
-  margin: 5px 0 10px 5px;
-}
-.enchantee-entrees .enchantee-entrees-bloc__paragraphe span {
-  margin-right: 20px;
-}
-.enchantee-entrees .enchantee-entrees-bloc__titre {
-  margin: 5px 0 0 5px;
-}
-
-.palette-gout-entrees {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.palette-gout-entrees .palette-gout-entrees-bloc {
-  width: 100%;
-  border: solid 2px white;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
-}
-.palette-gout-entrees .palette-gout-entrees-bloc__paragraphe {
-  justify-content: space-between;
-  align-items: center;
-}
-.palette-gout-entrees .palette-gout-entrees-bloc__paragraphe p {
-  margin: 5px 0 10px 5px;
-}
-.palette-gout-entrees .palette-gout-entrees-bloc__paragraphe span {
-  margin-right: 20px;
-}
-.palette-gout-entrees .palette-gout-entrees-bloc__titre {
-  margin: 5px 0 0 5px;
-}
-
+.francaise-entrees,
+.enchantee-entrees,
+.palette-gout-entrees,
 .delices-sens-entrees {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.delices-sens-entrees .delices-sens-entrees-bloc {
+
+.francaise-entrees-bloc,
+.enchantee-entrees-bloc,
+.palette-gout-entrees-bloc,
+.delices-sens-entrees-bloc {
   width: 100%;
   border: solid 2px white;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
 }
-.delices-sens-entrees .delices-sens-entrees-bloc__paragraphe {
+
+.francaise-entrees-check {
+  border: solid 2px #99E2D0;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  height: 60px;
+  width: 18%;
+  text-align: center;
+  display: none;
+}
+.francaise-entrees-check .fa-check {
+  border: solid 2px white;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px;
+  color: #99E2D0;
+}
+
+.francaise-entrees-bloc__paragraphe,
+.enchantee-entrees-bloc__paragraphe,
+.palette-gout-entrees-bloc__paragraphe,
+.delices-sens-entrees-bloc__paragraphe {
   justify-content: space-between;
   align-items: center;
 }
-.delices-sens-entrees .delices-sens-entrees-bloc__paragraphe p {
+
+.francaise-entrees-bloc__paragraphe p,
+.enchantee-entrees-bloc__paragraphe p,
+.palette-gout-entrees-bloc__paragraphe p,
+.delices-sens-entrees-bloc__paragraphe p {
   margin: 5px 0 10px 5px;
 }
-.delices-sens-entrees .delices-sens-entrees-bloc__paragraphe span {
+
+.francaise-entrees-bloc__paragraphe span,
+.enchantee-entrees-bloc__paragraphe span,
+.palette-gout-entrees-bloc__paragraphe span,
+.delices-sens-entrees-bloc__paragraphe span {
   margin-right: 20px;
 }
-.delices-sens-entrees .delices-sens-entrees-bloc__titre {
+
+.francaise-entrees-bloc__titre,
+.enchantee-entrees-bloc__titre,
+.palette-gout-entrees-bloc__titre,
+.delices-sens-entrees-bloc__titre {
+  margin: 5px 0 0 5px;
+}
+
+.conteneur-francaise-plats,
+.conteneur-enchantee-plats,
+.conteneur-palette-gout-plats,
+.conteneur-delices-sens-plats {
+  margin: 0 0 50px 0;
+}
+
+.francaise-plats,
+.enchantee-plats,
+.palette-gout-plats,
+.delices-sens-plats {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.francaise-plats-bloc,
+.enchantee-plats-bloc,
+.palette-gout-plats-bloc,
+.delices-sens-plats-bloc {
+  width: 100%;
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
+}
+
+.francaise-plats-bloc__paragraphe,
+.enchantee-plats-bloc__paragraphe,
+.palette-gout-plats-bloc__paragraphe,
+.delices-sens-plats-bloc__paragraphe {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.francaise-plats-bloc__paragraphe p,
+.enchantee-plats-bloc__paragraphe p,
+.palette-gout-plats-bloc__paragraphe p,
+.delices-sens-plats-bloc__paragraphe p {
+  margin: 5px 0 10px 5px;
+}
+
+.francaise-plats-bloc__paragraphe span,
+.enchantee-plats-bloc__paragraphe span,
+.palette-gout-plats-bloc__paragraphe span,
+.delices-sens-plats-bloc__paragraphe span {
+  margin-right: 20px;
+}
+
+.francaise-plats-bloc__titre,
+.enchantee-plats-bloc__titre,
+.palette-gout-plats-bloc__titre,
+.delices-sens-plats-bloc__titre {
+  margin: 5px 0 0 5px;
+}
+
+.conteneur-francaise-desserts,
+.conteneur-enchantee-desserts,
+.conteneur-palette-gout-desserts,
+.conteneur-delices-sens-desserts {
+  margin: 0 0 50px 0;
+}
+
+.francaise-desserts,
+.enchantee-desserts,
+.palette-gout-desserts,
+.delices-sens-desserts {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.francaise-desserts-bloc,
+.enchantee-desserts-bloc,
+.palette-gout-desserts-bloc,
+.delices-sens-desserts-bloc {
+  width: 100%;
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
+}
+
+.francaise-desserts-bloc__paragraphe,
+.enchantee-desserts-bloc__paragraphe,
+.palette-gout-desserts-bloc__paragraphe,
+.delices-sens-desserts-bloc__paragraphe {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.francaise-desserts-bloc__paragraphe p,
+.enchantee-desserts-bloc__paragraphe p,
+.palette-gout-desserts-bloc__paragraphe p,
+.delices-sens-desserts-bloc__paragraphe p {
+  margin: 5px 0 10px 5px;
+}
+
+.francaise-desserts-bloc__paragraphe span,
+.enchantee-desserts-bloc__paragraphe span,
+.palette-gout-desserts-bloc__paragraphe span,
+.delices-sens-desserts-bloc__paragraphe span {
+  margin-right: 20px;
+}
+
+.francaise-desserts-bloc__titre,
+.enchantee-desserts-bloc__titre,
+.palette-gout-desserts-bloc__titre,
+.delices-sens-desserts-bloc__titre {
   margin: 5px 0 0 5px;
 }
 
 .index-section__paragraphe {
   justify-content: center;
   margin: 0;
-  border: 2px solid #e8f9f5;
-  background-color: #278870;
+  border: 2px solid #e5e3e3;
+  background-color: #e5e3e3;
   padding: 15px 0px;
+  font-weight: bold;
 }
 
 .fa-location-dot {
@@ -209,23 +323,25 @@
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .index-aside__titre {
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0 30px;
 }
 .index-aside__paragraphe {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
+  color: #878181;
 }
 
 .index-nav {
   padding-left: 10px;
-  height: 300px;
+  height: 390px;
   padding-top: 10px;
   background-color: white;
 }
@@ -236,13 +352,13 @@
 }
 .index-nav__menu-liste {
   justify-content: space-evenly;
-  width: 90%;
-  margin-left: -40px;
-  border: solid 2px #e8f9f5;
+  width: 85%;
+  margin-left: -30px;
+  border: solid 2px #f3f3f3;
   border-radius: 15px;
-  padding: 15px 50px 15px 0px;
+  padding: 20px 50px 20px 0px;
   margin-bottom: 20px;
-  background-color: #e8f9f5;
+  background-color: #f3f3f3;
   box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.1);
 }
 .index-nav .fa-1, .index-nav .fa-3, .index-nav .fa-2 {
@@ -256,11 +372,25 @@
   color: white;
   margin-left: -35px;
 }
+.index-nav .fa-mobile-screen-button {
+  color: #ada7a7;
+}
+.index-nav .fa-bars {
+  color: #ada7a7;
+}
+.index-nav .fa-store {
+  color: #9356DC;
+}
+
 #index-restaurant {
   margin-top: 40px;
 }
 #index-restaurant h2 {
   margin-left: 15px;
+}
+
+#index-restaurant {
+  height: 1070px;
 }
 
 .index-menilmontant-figure, .index-folie-mericourt-figure, .index-cite-rouge-figure, .index-charonne-figure {
@@ -273,12 +403,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 40px;
+  height: 50px;
   background-color: white;
   border-radius: 0px 0px 20px 20px;
 }
 .index-menilmontant-figure__bloc-text h3 {
-  margin-bottom: -10px;
+  margin-bottom: -15px;
 }
 .index-menilmontant-figure img, .index-folie-mericourt-figure img, .index-cite-rouge-figure img, .index-charonne-figure img {
   width: 100%;
@@ -288,23 +418,39 @@
   margin-bottom: -5px;
 }
 
-.index-charonne-figure__bloc-text h3 {
-  margin-bottom: -10px;
+.nouveau {
+  border: solid 2px #1bebc9;
+  color: #057e6b;
+  background-color: #1bebc9;
+  width: 25%;
+  height: 23px;
+  text-align: center;
+  padding-top: 3px;
+  position: absolute;
+  left: 245px;
 }
 
-.index-cite-rouge-figure__bloc-text h3 {
-  margin-bottom: -10px;
-}
-
-.index-folie-mericourt-figure__bloc-text h3 {
-  margin-bottom: -10px;
+.fa-heart {
+  font-size: 20px;
 }
 
 .fa-heart:hover {
   color: #9356DC;
 }
 
+.index-charonne-figure__bloc-text h3 {
+  margin-bottom: -15px;
+}
+
+.index-cite-rouge-figure__bloc-text h3 {
+  margin-bottom: -15px;
+}
+
+.index-folie-mericourt-figure__bloc-text h3 {
+  margin-bottom: -15px;
+}
+
 body {
-  background-color: #e8f9f5;
+  background-color: #f3f3f3;
   margin: 0;
 }/*# sourceMappingURL=main.css.map */

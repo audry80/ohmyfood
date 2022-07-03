@@ -1,0 +1,24 @@
+.index-aside__button{
+    background-color: $primaire ;
+    border: 2px solid $primaire;
+    border-radius: 30px;
+    color: $quatro;
+    padding: 10px;    
+}
+
+.francaise-button{
+   @extend .index-aside__button;
+   margin-left: 35%;
+}
+
+.enchantee-button{
+    @extend .francaise-button;
+ }
+
+ .palette-gout-button{
+    @extend .francaise-button;
+ }
+
+ .delices-sens-button{
+    @extend .francaise-button;
+ }
