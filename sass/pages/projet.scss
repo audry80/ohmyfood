@@ -48,11 +48,15 @@
 
 .fa-heart {
     font-size: 20px;
+    /*color: black;*/
+
+    &:hover {
+        color: $primaire;
+        cursor: pointer;
+    }
 }
 
-.fa-heart:hover {
-    color: $primaire;
-}
+
 
 
 //charonne

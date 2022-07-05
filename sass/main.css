@@ -39,11 +39,15 @@ h3 {
 }
 
 .index-aside__button, .francaise-button, .delices-sens-button, .palette-gout-button, .enchantee-button {
-  background-color: #9356DC;
-  border: 2px solid #9356DC;
+  background-color: rgba(173, 42, 171, 0.67);
+  border: 2px solid rgba(195, 51, 193, 0);
   border-radius: 30px;
   color: white;
   padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 0px 9px 3px rgba(121, 117, 117, 0.38);
 }
 
 .francaise-button, .delices-sens-button, .palette-gout-button, .enchantee-button {
@@ -118,6 +122,10 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
+#conteneur-francaise .francaise-titre:hover, #conteneur-delices-sens .francaise-titre:hover, #conteneur-palette-gout .francaise-titre:hover, #conteneur-enchantee .francaise-titre:hover {
+  border-bottom: solid 3px #99E2D0;
+  width: 8%;
+}
 
 .conteneur-francaise-entrees,
 .conteneur-enchantee-entrees,
@@ -147,6 +155,13 @@ h3 {
 }
 
 .francaise-entrees-check {
+  transition: margin-right 2s cubic-bezier(0.9, -0.03, 0.13, 1.09) 0.5s;
+}
+
+.francaise-entrees-check:hover,
+.enchantee-entrees-check:hover,
+.palette-gout-entrees-check:hover,
+.delices-sens-entrees-check:hover {
   border: solid 2px #99E2D0;
   background-color: #99E2D0;
   color: #99E2D0;
@@ -154,9 +169,11 @@ h3 {
   height: 60px;
   width: 18%;
   text-align: center;
-  display: none;
 }
-.francaise-entrees-check .fa-check {
+.francaise-entrees-check:hover .fa-check,
+.enchantee-entrees-check:hover .fa-check,
+.palette-gout-entrees-check:hover .fa-check,
+.delices-sens-entrees-check:hover .fa-check {
   border: solid 2px white;
   background-color: white;
   border-radius: 10px;
@@ -432,10 +449,11 @@ h3 {
 
 .fa-heart {
   font-size: 20px;
+  /*color: black;*/
 }
-
 .fa-heart:hover {
   color: #9356DC;
+  cursor: pointer;
 }
 
 .index-charonne-figure__bloc-text h3 {

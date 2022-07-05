@@ -19,6 +19,11 @@ h3 {
     h2 {
         @include h2;
     }
+
+    .francaise-titre:hover {
+        border-bottom: solid 3px $tertiaire;
+        width: 8%
+    }
 }
 
 #conteneur-enchantee {
@@ -57,13 +62,20 @@ h3 {
     @include menu-bloc;
 }
 
-//a verifier pour le faire apparaitre
 .francaise-entrees-check {
-    @include check-hover;
-    display: none;
+    @include transition;
+}
 
-    .fa-check {
-        @include fa-check
+//a verifier pour le faire apparaitre
+.francaise-entrees-check:hover,
+.enchantee-entrees-check:hover,
+.palette-gout-entrees-check:hover,
+.delices-sens-entrees-check:hover {
+    @include check-hover;
+
+
+    .fa-check{
+        @include fa-check;
     }
 }
 

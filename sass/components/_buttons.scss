@@ -1,24 +1,29 @@
-.index-aside__button{
-    background-color: $primaire ;
-    border: 2px solid $primaire;
-    border-radius: 30px;
-    color: $quatro;
-    padding: 10px;    
+.index-aside__button {
+   background-color: rgb(173 42 171 / 67%);
+   border: 2px solid rgb(195 51 193 / 0%);
+   ;
+   border-radius: 30px;
+   color: $quatro;
+   padding: 10px;
+   cursor: pointer;
+   font-weight: bold;
+   text-decoration: none;
+   box-shadow: 0px 0px 9px 3px rgb(121 117 117 / 38%);
 }
 
-.francaise-button{
+.francaise-button {
    @extend .index-aside__button;
    margin-left: 35%;
 }
 
-.enchantee-button{
-    @extend .francaise-button;
- }
+.enchantee-button {
+   @extend .francaise-button;
+}
 
- .palette-gout-button{
-    @extend .francaise-button;
- }
+.palette-gout-button {
+   @extend .francaise-button;
+}
 
- .delices-sens-button{
-    @extend .francaise-button;
- }
+.delices-sens-button {
+   @extend .francaise-button;
+}
