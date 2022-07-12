@@ -1,7 +1,6 @@
 .index-aside__button {
    background-color: rgb(173 42 171 / 67%);
-   border: 2px solid rgb(195 51 193 / 0%);
-   ;
+   border: 2px solid rgb(195 51 193 / 0%);   
    border-radius: 30px;
    color: $quatro;
    padding: 10px;
@@ -9,6 +8,9 @@
    font-weight: bold;
    text-decoration: none;
    box-shadow: 0px 0px 9px 3px rgb(121 117 117 / 38%);
+   &:hover{
+      box-shadow: 0px -8px 9px 3px rgb(121 117 117 / 41%);
+   }
 }
 
 .francaise-button {

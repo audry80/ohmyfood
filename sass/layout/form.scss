@@ -1,6 +1,4 @@
-h1,
-h2,
-h3 {
+h1 {
     @extend %font-family-titre;
 }
 
@@ -10,6 +8,8 @@ h3 {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    z-index: -1;
+    position: absolute;
 }
 
 //menus les conteneur 
@@ -52,7 +52,27 @@ h3 {
 .palette-gout-entrees,
 .delices-sens-entrees {
     @include menu;
+    transition: transform 2s ease-out;
+    .fa-check {
+        opacity: 0;
+        transform: rotate(0turn);
+    }
 
+    &:hover {
+        cursor: pointer;
+        
+        .francaise-entrees-check,
+        .enchantee-entrees-check,
+        .palette-gout-entrees-check,
+        .delices-sens-entrees-check {
+            @include check-hover;            
+        }
+
+        .fa-check {
+            @include fa-check;
+           transform: rotate(1turn);            
+        }
+    }
 }
 
 .francaise-entrees-bloc,
@@ -60,23 +80,6 @@ h3 {
 .palette-gout-entrees-bloc,
 .delices-sens-entrees-bloc {
     @include menu-bloc;
-}
-
-.francaise-entrees-check {
-    @include transition;
-}
-
-//a verifier pour le faire apparaitre
-.francaise-entrees-check:hover,
-.enchantee-entrees-check:hover,
-.palette-gout-entrees-check:hover,
-.delices-sens-entrees-check:hover {
-    @include check-hover;
-
-
-    .fa-check{
-        @include fa-check;
-    }
 }
 
 .francaise-entrees-bloc__paragraphe,
@@ -113,6 +116,7 @@ h3 {
 .conteneur-palette-gout-plats,
 .conteneur-delices-sens-plats {
     @include conteneur-menu;
+
 }
 
 .francaise-plats,
@@ -120,6 +124,25 @@ h3 {
 .palette-gout-plats,
 .delices-sens-plats {
     @include menu;
+
+    .fa-check {
+        opacity: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .francaise-plats-check,
+        .enchantee-plats-check,
+        .palette-gout-plats-check,
+        .delices-sens-plats-check {
+            @include check-hover;
+        }
+
+        .fa-check {
+            @include fa-check;
+        }
+    }
 }
 
 .francaise-plats-bloc,
@@ -170,6 +193,25 @@ h3 {
 .palette-gout-desserts,
 .delices-sens-desserts {
     @include menu;
+
+    .fa-check {
+        opacity: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .francaise-desserts-check,
+        .enchantee-desserts-check,
+        .palette-gout-desserts-check,
+        .delices-sens-desserts-check {
+            @include check-hover;
+        }
+
+        .fa-check {
+            @include fa-check;
+        }
+    }
 }
 
 .francaise-desserts-bloc,

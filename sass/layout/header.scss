@@ -15,6 +15,7 @@
     }
 }
 
+
 //les menus
 .header-restaurants {
     @extend %flex-row;
@@ -27,6 +28,10 @@
         @extend %flex-row;
         justify-content: space-around;
         align-items: center;
+
+        .fa-arrow-left {
+            color: black;
+        }
     }
 }
 

@@ -20,11 +20,12 @@
 
 //conteneur menu
 @mixin conteneur {
-    border: solid 2px black;
     border-radius: 40px 40px 0 0;
-    margin: -30px 0 0 0;
+    margin: 200px 0 0 0;
     padding: 10px;
     height: 1180px;
+    z-index: 10;
+    background-color: white;
 }
 
 //titre conteneur menu
@@ -35,7 +36,7 @@
 
 //menu nav
 @mixin conteneur-menu {
-    margin:0 0 50px 0;
+    margin: 0 0 50px 0;
 }
 
 @mixin menu {
@@ -43,14 +44,16 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: $margin;
+    border: solid 2px #{$quatro};
+    border-radius: 15px;
+    background-color: #{$quatro};
+    box-shadow: 0px 5px 16px 2px rgb(0 0 0 / 20%);
+    width: 100%;
 }
 
 @mixin menu-bloc {
     width: 100%;
-    border: solid 2px #{$quatro};
-    border-radius: 15px;
-    background-color: #{$quatro};
-    box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 20%);
+
 }
 
 @mixin paragraphe {
@@ -65,29 +68,34 @@
 
 @mixin paragraphe-span {
     margin-right: $margin +10px;
+    white-space: nowrap;
 }
 
 @mixin titre {
     margin: 5px 0 0 5px;
 }
 
-@mixin check-hover{
+@mixin check-hover {
     border: solid 2px #99E2D0;
     background-color: #99E2D0;
-    color:#99E2D0;
+    color: #99E2D0;
     border-radius: 0px 10px 10px 0px;
     height: 60px;
     width: 18%;
     text-align: center;
+   
 }
+
 @mixin fa-check {
     border: solid 2px white;
     background-color: white;
     border-radius: 10px;
     padding: 2px;
-    color:#99E2D0;
+    color: #99E2D0;
+    opacity: 1;
 }
 
 @mixin transition {
-    transition: margin-right 2s cubic-bezier(0.9, -0.03, 0.13, 1.09) .5s;
+    transition: margin-right 2s;
+
 }
