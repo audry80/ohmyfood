@@ -52,35 +52,50 @@ h1 {
 .palette-gout-entrees,
 .delices-sens-entrees {
     @include menu;
-    transition: transform 2s ease-out;
+    position: relative;
+
     .fa-check {
         opacity: 0;
         transform: rotate(0turn);
+        transition: transform ease-in-out 2s;
     }
 
-    &:hover {
+    .francaise-entrees-check {
+        transform: scalex(0);
+        transition: transform ease-in-out 2s , width 0%;
+               
+    }
+
+    &:hover   {
         cursor: pointer;
-        
+
         .francaise-entrees-check,
         .enchantee-entrees-check,
         .palette-gout-entrees-check,
         .delices-sens-entrees-check {
-            @include check-hover;            
+            @include check-hover;
+            transform: scalex(1.2) translateX(2%);
+            transform-origin: right 45%;
+            transition: width 18% 2s;
+         
         }
 
-        .fa-check {
+        .fa-check  {
             @include fa-check;
-           transform: rotate(1turn);            
+            transform: rotate(1turn);
         }
+
+      }
     }
-}
+
 
 .francaise-entrees-bloc,
 .enchantee-entrees-bloc,
 .palette-gout-entrees-bloc,
 .delices-sens-entrees-bloc {
-    @include menu-bloc;
-}
+    @include menu-bloc;    
+   
+    }
 
 .francaise-entrees-bloc__paragraphe,
 .enchantee-entrees-bloc__paragraphe,

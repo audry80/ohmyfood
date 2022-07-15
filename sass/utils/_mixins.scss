@@ -81,8 +81,9 @@
     color: #99E2D0;
     border-radius: 0px 10px 10px 0px;
     height: 60px;
-    width: 18%;
+   /* width: 13%;*/
     text-align: center;
+    
    
 }
 
@@ -95,7 +96,3 @@
     opacity: 1;
 }
 
-@mixin transition {
-    transition: margin-right 2s;
-
-}
