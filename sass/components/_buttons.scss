@@ -7,25 +7,19 @@
    cursor: pointer;
    font-weight: bold;
    text-decoration: none;
-   box-shadow: 0px 0px 9px 3px rgb(121 117 117 / 38%);
+   box-shadow: 0px 0px 9px 3px rgb(183 4 180 / 35%);
    &:hover{
-      box-shadow: 0px -8px 9px 3px rgb(121 117 117 / 41%);
+      box-shadow: inset -18px -13px 7px 0px rgb(147 106 165 / 64%);
    }
 }
-
-.francaise-button {
-   @extend .index-aside__button;
-   margin-left: 35%;
+.button-menu{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
 }
 
-.enchantee-button {
-   @extend .francaise-button;
+.button {
+   @extend .index-aside__button;  
+   padding: 10px 35px 10px 35px;
 }
 
-.palette-gout-button {
-   @extend .francaise-button;
-}
-
-.delices-sens-button {
-   @extend .francaise-button;
-}

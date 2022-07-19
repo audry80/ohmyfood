@@ -39,7 +39,8 @@
         z-index: 1;
 
         &:hover {
-            display: none;
+           /* display: none;*/
+            border-color: rgba(173, 42, 171, 0.67);
         }
     }
 
@@ -51,8 +52,8 @@
 
         &:hover {
             opacity: 1;
-
-            color: $primaire;
+            
+            color: rgba(173, 42, 171, 0.67);
             cursor: pointer;
         }
     }

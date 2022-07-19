@@ -15,19 +15,49 @@ h1 {
 //menus les conteneur 
 #conteneur-francaise {
     @include conteneur;
+}
 
-    h2 {
-        @include h2;
-    }
+.francaise-menu,
+.palette-gout-menu,
+.enchantee-menu,
+.delices-sens-menu {
+    @include menu-titre;
 
-    .francaise-titre:hover {
-        border-bottom: solid 3px $tertiaire;
-        width: 8%
+    &__icone {
+        .icone1 {
+            font-size: 20px;
+            z-index: 1;
+
+            &:hover {
+                display: none;
+            }
+        }
+
+        .icone2 {
+            z-index: 10;
+            opacity: 0;
+            margin-left: -24px;
+            font-size: 20px;
+
+            &:hover {
+                opacity: 1;
+
+                color: $primaire;
+                cursor: pointer;
+            }
+        }
     }
+}
+
+
+.francaise-titre:hover {
+    border-bottom: solid 3px $tertiaire;
+    width: 8%
 }
 
 #conteneur-enchantee {
     @extend #conteneur-francaise;
+    height: 1280px;
 }
 
 #conteneur-palette-gout {
@@ -47,12 +77,48 @@ h1 {
     @include conteneur-menu;
 }
 
+.francaise-animation,
+.enchatee-animation,
+.palette-gout-animation,
+.delices-sens-animation {
+    animation: apparition 1s ease-in-out;
+}
+
+.francaise-animation2,
+.enchatee-animation2,
+.palette-gout-animation2,
+.delices-sens-animation2 {
+    animation: apparition 1.5s ease-in-out;
+}
+
+.francaise-animation3,
+.enchatee-animation3,
+.palette-gout-animation3,
+.delices-sens-animation3 {
+    animation: apparition 2s ease-in-out;
+}
+
+.enchatee-animation4 {
+    animation: apparition 2.5s ease-in-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(15px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
 .francaise-entrees,
 .enchantee-entrees,
 .palette-gout-entrees,
 .delices-sens-entrees {
     @include menu;
-    position: relative;
 
     .fa-check {
         opacity: 0;
@@ -60,48 +126,44 @@ h1 {
         transition: transform ease-in-out 2s;
     }
 
-    .francaise-entrees-check {
-        transform: scalex(0);
-        transition: transform ease-in-out 2s , width 0%;
-               
+    .francaise-entrees-check,
+    .enchantee-entrees-check,
+    .palette-gout-entrees-check,
+    .delices-sens-entrees-check {
+        @include check-hover;
     }
 
-    &:hover   {
+    &:hover {
         cursor: pointer;
 
         .francaise-entrees-check,
         .enchantee-entrees-check,
         .palette-gout-entrees-check,
         .delices-sens-entrees-check {
-            @include check-hover;
+            margin-right: 0;
             transform: scalex(1.2) translateX(2%);
-            transform-origin: right 45%;
-            transition: width 18% 2s;
-         
+            width: 13%;
         }
 
-        .fa-check  {
+        .fa-check {
             @include fa-check;
-            transform: rotate(1turn);
         }
-
-      }
     }
-
+}
 
 .francaise-entrees-bloc,
 .enchantee-entrees-bloc,
 .palette-gout-entrees-bloc,
 .delices-sens-entrees-bloc {
-    @include menu-bloc;    
-   
-    }
+    @include menu-bloc;
+}
 
 .francaise-entrees-bloc__paragraphe,
 .enchantee-entrees-bloc__paragraphe,
 .palette-gout-entrees-bloc__paragraphe,
 .delices-sens-entrees-bloc__paragraphe {
     @include paragraphe;
+
 }
 
 .francaise-entrees-bloc__paragraphe p,
@@ -142,6 +204,15 @@ h1 {
 
     .fa-check {
         opacity: 0;
+        transform: rotate(0turn);
+        transition: transform ease-in-out 2s;
+    }
+
+    .francaise-plats-check,
+    .enchantee-plats-check,
+    .palette-gout-plats-check,
+    .delices-sens-plats-check {
+        @include check-hover;
     }
 
     &:hover {
@@ -151,7 +222,9 @@ h1 {
         .enchantee-plats-check,
         .palette-gout-plats-check,
         .delices-sens-plats-check {
-            @include check-hover;
+            margin-right: 0;
+            transform: scalex(1.2) translateX(2%);
+            width: 13%;
         }
 
         .fa-check {
@@ -211,6 +284,15 @@ h1 {
 
     .fa-check {
         opacity: 0;
+        transform: rotate(0turn);
+        transition: transform ease-in-out 2s;
+    }
+
+    .francaise-desserts-check,
+    .enchantee-desserts-check,
+    .palette-gout-desserts-check,
+    .delices-sens-desserts-check {
+        @include check-hover;
     }
 
     &:hover {
@@ -220,7 +302,9 @@ h1 {
         .enchantee-desserts-check,
         .palette-gout-desserts-check,
         .delices-sens-desserts-check {
-            @include check-hover;
+            margin-right: 0;
+            transform: scalex(1.2) translateX(2%);
+            width: 13%;
         }
 
         .fa-check {

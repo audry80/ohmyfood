@@ -1,16 +1,23 @@
-%flex-row{
+%flex-row {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
-%flex-column{
+%flex-column {
     display: flex;
     flex-direction: column;
 }
 
-//polices
-%font-family-text{
-font-family: 'Roboto', sans-serif;}
+%flex-justify {
+    justify-content: space-between;
+    align-items: center;
+}
 
-%font-family-titre{
-font-family: 'Shrikhand', 'cursive'; }
+//polices
+%font-family-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+%font-family-titre {
+    font-family: 'Shrikhand', 'cursive';
+}

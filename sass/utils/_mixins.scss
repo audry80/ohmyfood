@@ -29,9 +29,10 @@
 }
 
 //titre conteneur menu
-@mixin h2 {
-    display: flex;
-    justify-content: space-between;
+@mixin menu-titre {
+    @extend %flex-row;
+    @extend %flex-justify ;
+    margin-right: 10px;
 }
 
 //menu nav
@@ -41,8 +42,7 @@
 
 @mixin menu {
     @extend %flex-row;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-justify ;
     margin-bottom: $margin;
     border: solid 2px #{$quatro};
     border-radius: 15px;
@@ -53,13 +53,14 @@
 
 @mixin menu-bloc {
     width: 100%;
+    margin-right: 0%;
+    transition: all ease-in-out 3s;
 
 }
 
 @mixin paragraphe {
     @extend %flex-row;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-justify ;
 }
 
 @mixin paragraphe-p {
@@ -81,10 +82,12 @@
     color: #99E2D0;
     border-radius: 0px 10px 10px 0px;
     height: 60px;
-   /* width: 13%;*/
-    text-align: center;
-    
-   
+    width: 8%;
+    text-align: center;   
+    transform: scalex(0);
+    transition: all 2s;
+    transform-origin: right 45%;
+    margin-right: -13%;
 }
 
 @mixin fa-check {
@@ -94,5 +97,6 @@
     padding: 2px;
     color: #99E2D0;
     opacity: 1;
+    transform: rotate(1turn);
 }
 

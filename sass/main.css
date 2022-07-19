@@ -18,7 +18,10 @@
 .delices-sens-entrees-bloc__paragraphe, .francaise-entrees,
 .enchantee-entrees,
 .palette-gout-entrees,
-.delices-sens-entrees, .header-restaurants__titre, .header-restaurants, .header-index__titre, .header-index {
+.delices-sens-entrees, .francaise-menu,
+.palette-gout-menu,
+.enchantee-menu,
+.delices-sens-menu, .header-restaurants__titre, .header-restaurants, .header-index__titre, .header-index {
   display: flex;
   flex-direction: row;
 }
@@ -26,6 +29,32 @@
 .index-nav__menu, .index-aside, .footer-menu__liste {
   display: flex;
   flex-direction: column;
+}
+
+.francaise-desserts-bloc__paragraphe,
+.enchantee-desserts-bloc__paragraphe,
+.palette-gout-desserts-bloc__paragraphe,
+.delices-sens-desserts-bloc__paragraphe, .francaise-desserts,
+.enchantee-desserts,
+.palette-gout-desserts,
+.delices-sens-desserts, .francaise-plats-bloc__paragraphe,
+.enchantee-plats-bloc__paragraphe,
+.palette-gout-plats-bloc__paragraphe,
+.delices-sens-plats-bloc__paragraphe, .francaise-plats,
+.enchantee-plats,
+.palette-gout-plats,
+.delices-sens-plats, .francaise-entrees-bloc__paragraphe,
+.enchantee-entrees-bloc__paragraphe,
+.palette-gout-entrees-bloc__paragraphe,
+.delices-sens-entrees-bloc__paragraphe, .francaise-entrees,
+.enchantee-entrees,
+.palette-gout-entrees,
+.delices-sens-entrees, .francaise-menu,
+.palette-gout-menu,
+.enchantee-menu,
+.delices-sens-menu {
+  justify-content: space-between;
+  align-items: center;
 }
 
 body {
@@ -36,7 +65,7 @@ h1 {
   font-family: "Shrikhand", "cursive";
 }
 
-.index-aside__button, .francaise-button, .delices-sens-button, .palette-gout-button, .enchantee-button {
+.index-aside__button, .button {
   background-color: rgba(173, 42, 171, 0.67);
   border: 2px solid rgba(195, 51, 193, 0);
   border-radius: 30px;
@@ -45,14 +74,20 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0px 0px 9px 3px rgba(121, 117, 117, 0.38);
+  box-shadow: 0px 0px 9px 3px rgba(183, 4, 180, 0.35);
 }
-.index-aside__button:hover, .francaise-button:hover, .delices-sens-button:hover, .palette-gout-button:hover, .enchantee-button:hover {
-  box-shadow: 0px -8px 9px 3px rgba(121, 117, 117, 0.41);
+.index-aside__button:hover, .button:hover {
+  box-shadow: inset -18px -13px 7px 0px rgba(147, 106, 165, 0.64);
 }
 
-.francaise-button, .delices-sens-button, .palette-gout-button, .enchantee-button {
-  margin-left: 35%;
+.button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 10px 35px 10px 35px;
 }
 
 .header-index {
@@ -125,13 +160,51 @@ h1 {
   z-index: 10;
   background-color: white;
 }
-#conteneur-francaise h2, #conteneur-delices-sens h2, #conteneur-palette-gout h2, #conteneur-enchantee h2 {
-  display: flex;
-  justify-content: space-between;
+
+.francaise-menu,
+.palette-gout-menu,
+.enchantee-menu,
+.delices-sens-menu {
+  margin-right: 10px;
 }
-#conteneur-francaise .francaise-titre:hover, #conteneur-delices-sens .francaise-titre:hover, #conteneur-palette-gout .francaise-titre:hover, #conteneur-enchantee .francaise-titre:hover {
+.francaise-menu__icone .icone1,
+.palette-gout-menu__icone .icone1,
+.enchantee-menu__icone .icone1,
+.delices-sens-menu__icone .icone1 {
+  font-size: 20px;
+  z-index: 1;
+}
+.francaise-menu__icone .icone1:hover,
+.palette-gout-menu__icone .icone1:hover,
+.enchantee-menu__icone .icone1:hover,
+.delices-sens-menu__icone .icone1:hover {
+  display: none;
+}
+.francaise-menu__icone .icone2,
+.palette-gout-menu__icone .icone2,
+.enchantee-menu__icone .icone2,
+.delices-sens-menu__icone .icone2 {
+  z-index: 10;
+  opacity: 0;
+  margin-left: -24px;
+  font-size: 20px;
+}
+.francaise-menu__icone .icone2:hover,
+.palette-gout-menu__icone .icone2:hover,
+.enchantee-menu__icone .icone2:hover,
+.delices-sens-menu__icone .icone2:hover {
+  opacity: 1;
+  color: #9356DC;
+  cursor: pointer;
+}
+
+.francaise-titre:hover {
   border-bottom: solid 3px #99E2D0;
   width: 8%;
+}
+
+#conteneur-enchantee {
+  height: 1280px;
 }
 
 .conteneur-francaise-entrees,
@@ -141,19 +214,51 @@ h1 {
   margin: 0 0 50px 0;
 }
 
+.francaise-animation,
+.enchatee-animation,
+.palette-gout-animation,
+.delices-sens-animation {
+  animation: apparition 1s ease-in-out;
+}
+
+.francaise-animation2,
+.enchatee-animation2,
+.palette-gout-animation2,
+.delices-sens-animation2 {
+  animation: apparition 1.5s ease-in-out;
+}
+
+.francaise-animation3,
+.enchatee-animation3,
+.palette-gout-animation3,
+.delices-sens-animation3 {
+  animation: apparition 2s ease-in-out;
+}
+
+.enchatee-animation4 {
+  animation: apparition 2.5s ease-in-out;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .francaise-entrees,
 .enchantee-entrees,
 .palette-gout-entrees,
 .delices-sens-entrees {
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
   border: solid 2px white;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
-  position: relative;
 }
 .francaise-entrees .fa-check,
 .enchantee-entrees .fa-check,
@@ -164,11 +269,32 @@ h1 {
   transition: transform ease-in-out 2s;
 }
 .francaise-entrees .francaise-entrees-check,
+.francaise-entrees .enchantee-entrees-check,
+.francaise-entrees .palette-gout-entrees-check,
+.francaise-entrees .delices-sens-entrees-check,
 .enchantee-entrees .francaise-entrees-check,
+.enchantee-entrees .enchantee-entrees-check,
+.enchantee-entrees .palette-gout-entrees-check,
+.enchantee-entrees .delices-sens-entrees-check,
 .palette-gout-entrees .francaise-entrees-check,
-.delices-sens-entrees .francaise-entrees-check {
+.palette-gout-entrees .enchantee-entrees-check,
+.palette-gout-entrees .palette-gout-entrees-check,
+.palette-gout-entrees .delices-sens-entrees-check,
+.delices-sens-entrees .francaise-entrees-check,
+.delices-sens-entrees .enchantee-entrees-check,
+.delices-sens-entrees .palette-gout-entrees-check,
+.delices-sens-entrees .delices-sens-entrees-check {
+  border: solid 2px #99E2D0;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  height: 60px;
+  width: 8%;
+  text-align: center;
   transform: scalex(0);
-  transition: transform ease-in-out 2s, width 0%;
+  transition: all 2s;
+  transform-origin: right 45%;
+  margin-right: -13%;
 }
 .francaise-entrees:hover,
 .enchantee-entrees:hover,
@@ -192,16 +318,9 @@ h1 {
 .delices-sens-entrees:hover .enchantee-entrees-check,
 .delices-sens-entrees:hover .palette-gout-entrees-check,
 .delices-sens-entrees:hover .delices-sens-entrees-check {
-  border: solid 2px #99E2D0;
-  background-color: #99E2D0;
-  color: #99E2D0;
-  border-radius: 0px 10px 10px 0px;
-  height: 60px;
-  /* width: 13%;*/
-  text-align: center;
+  margin-right: 0;
   transform: scalex(1.2) translateX(2%);
-  transform-origin: right 45%;
-  transition: width 18% 2s;
+  width: 13%;
 }
 .francaise-entrees:hover .fa-check,
 .enchantee-entrees:hover .fa-check,
@@ -221,14 +340,8 @@ h1 {
 .palette-gout-entrees-bloc,
 .delices-sens-entrees-bloc {
   width: 100%;
-}
-
-.francaise-entrees-bloc__paragraphe,
-.enchantee-entrees-bloc__paragraphe,
-.palette-gout-entrees-bloc__paragraphe,
-.delices-sens-entrees-bloc__paragraphe {
-  justify-content: space-between;
-  align-items: center;
+  margin-right: 0%;
+  transition: all ease-in-out 3s;
 }
 
 .francaise-entrees-bloc__paragraphe p,
@@ -264,8 +377,6 @@ h1 {
 .enchantee-plats,
 .palette-gout-plats,
 .delices-sens-plats {
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
   border: solid 2px white;
   border-radius: 15px;
@@ -278,6 +389,36 @@ h1 {
 .palette-gout-plats .fa-check,
 .delices-sens-plats .fa-check {
   opacity: 0;
+  transform: rotate(0turn);
+  transition: transform ease-in-out 2s;
+}
+.francaise-plats .francaise-plats-check,
+.francaise-plats .enchantee-plats-check,
+.francaise-plats .palette-gout-plats-check,
+.francaise-plats .delices-sens-plats-check,
+.enchantee-plats .francaise-plats-check,
+.enchantee-plats .enchantee-plats-check,
+.enchantee-plats .palette-gout-plats-check,
+.enchantee-plats .delices-sens-plats-check,
+.palette-gout-plats .francaise-plats-check,
+.palette-gout-plats .enchantee-plats-check,
+.palette-gout-plats .palette-gout-plats-check,
+.palette-gout-plats .delices-sens-plats-check,
+.delices-sens-plats .francaise-plats-check,
+.delices-sens-plats .enchantee-plats-check,
+.delices-sens-plats .palette-gout-plats-check,
+.delices-sens-plats .delices-sens-plats-check {
+  border: solid 2px #99E2D0;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  height: 60px;
+  width: 8%;
+  text-align: center;
+  transform: scalex(0);
+  transition: all 2s;
+  transform-origin: right 45%;
+  margin-right: -13%;
 }
 .francaise-plats:hover,
 .enchantee-plats:hover,
@@ -301,13 +442,9 @@ h1 {
 .delices-sens-plats:hover .enchantee-plats-check,
 .delices-sens-plats:hover .palette-gout-plats-check,
 .delices-sens-plats:hover .delices-sens-plats-check {
-  border: solid 2px #99E2D0;
-  background-color: #99E2D0;
-  color: #99E2D0;
-  border-radius: 0px 10px 10px 0px;
-  height: 60px;
-  /* width: 13%;*/
-  text-align: center;
+  margin-right: 0;
+  transform: scalex(1.2) translateX(2%);
+  width: 13%;
 }
 .francaise-plats:hover .fa-check,
 .enchantee-plats:hover .fa-check,
@@ -319,6 +456,7 @@ h1 {
   padding: 2px;
   color: #99E2D0;
   opacity: 1;
+  transform: rotate(1turn);
 }
 
 .francaise-plats-bloc,
@@ -326,14 +464,8 @@ h1 {
 .palette-gout-plats-bloc,
 .delices-sens-plats-bloc {
   width: 100%;
-}
-
-.francaise-plats-bloc__paragraphe,
-.enchantee-plats-bloc__paragraphe,
-.palette-gout-plats-bloc__paragraphe,
-.delices-sens-plats-bloc__paragraphe {
-  justify-content: space-between;
-  align-items: center;
+  margin-right: 0%;
+  transition: all ease-in-out 3s;
 }
 
 .francaise-plats-bloc__paragraphe p,
@@ -369,8 +501,6 @@ h1 {
 .enchantee-desserts,
 .palette-gout-desserts,
 .delices-sens-desserts {
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
   border: solid 2px white;
   border-radius: 15px;
@@ -383,6 +513,36 @@ h1 {
 .palette-gout-desserts .fa-check,
 .delices-sens-desserts .fa-check {
   opacity: 0;
+  transform: rotate(0turn);
+  transition: transform ease-in-out 2s;
+}
+.francaise-desserts .francaise-desserts-check,
+.francaise-desserts .enchantee-desserts-check,
+.francaise-desserts .palette-gout-desserts-check,
+.francaise-desserts .delices-sens-desserts-check,
+.enchantee-desserts .francaise-desserts-check,
+.enchantee-desserts .enchantee-desserts-check,
+.enchantee-desserts .palette-gout-desserts-check,
+.enchantee-desserts .delices-sens-desserts-check,
+.palette-gout-desserts .francaise-desserts-check,
+.palette-gout-desserts .enchantee-desserts-check,
+.palette-gout-desserts .palette-gout-desserts-check,
+.palette-gout-desserts .delices-sens-desserts-check,
+.delices-sens-desserts .francaise-desserts-check,
+.delices-sens-desserts .enchantee-desserts-check,
+.delices-sens-desserts .palette-gout-desserts-check,
+.delices-sens-desserts .delices-sens-desserts-check {
+  border: solid 2px #99E2D0;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  height: 60px;
+  width: 8%;
+  text-align: center;
+  transform: scalex(0);
+  transition: all 2s;
+  transform-origin: right 45%;
+  margin-right: -13%;
 }
 .francaise-desserts:hover,
 .enchantee-desserts:hover,
@@ -406,13 +566,9 @@ h1 {
 .delices-sens-desserts:hover .enchantee-desserts-check,
 .delices-sens-desserts:hover .palette-gout-desserts-check,
 .delices-sens-desserts:hover .delices-sens-desserts-check {
-  border: solid 2px #99E2D0;
-  background-color: #99E2D0;
-  color: #99E2D0;
-  border-radius: 0px 10px 10px 0px;
-  height: 60px;
-  /* width: 13%;*/
-  text-align: center;
+  margin-right: 0;
+  transform: scalex(1.2) translateX(2%);
+  width: 13%;
 }
 .francaise-desserts:hover .fa-check,
 .enchantee-desserts:hover .fa-check,
@@ -424,6 +580,7 @@ h1 {
   padding: 2px;
   color: #99E2D0;
   opacity: 1;
+  transform: rotate(1turn);
 }
 
 .francaise-desserts-bloc,
@@ -431,14 +588,8 @@ h1 {
 .palette-gout-desserts-bloc,
 .delices-sens-desserts-bloc {
   width: 100%;
-}
-
-.francaise-desserts-bloc__paragraphe,
-.enchantee-desserts-bloc__paragraphe,
-.palette-gout-desserts-bloc__paragraphe,
-.delices-sens-desserts-bloc__paragraphe {
-  justify-content: space-between;
-  align-items: center;
+  margin-right: 0%;
+  transition: all ease-in-out 3s;
 }
 
 .francaise-desserts-bloc__paragraphe p,
@@ -584,7 +735,8 @@ h1 {
   z-index: 1;
 }
 .index-menilmontant-figure__icone .icone1:hover, .index-folie-mericourt-figure__icone .icone1:hover, .index-cite-rouge-figure__icone .icone1:hover, .index-charonne-figure__icone .icone1:hover {
-  display: none;
+  /* display: none;*/
+  border-color: rgba(173, 42, 171, 0.67);
 }
 .index-menilmontant-figure__icone .icone2, .index-folie-mericourt-figure__icone .icone2, .index-cite-rouge-figure__icone .icone2, .index-charonne-figure__icone .icone2 {
   z-index: 10;
@@ -594,7 +746,7 @@ h1 {
 }
 .index-menilmontant-figure__icone .icone2:hover, .index-folie-mericourt-figure__icone .icone2:hover, .index-cite-rouge-figure__icone .icone2:hover, .index-charonne-figure__icone .icone2:hover {
   opacity: 1;
-  color: #9356DC;
+  color: rgba(173, 42, 171, 0.67);
   cursor: pointer;
 }
 
