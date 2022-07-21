@@ -16,6 +16,9 @@
         color: $quatro;
         display: contents;
         all: unset;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 

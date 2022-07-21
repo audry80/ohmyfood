@@ -23,28 +23,36 @@ h1 {
 .delices-sens-menu {
     @include menu-titre;
 
+    &:hover {
+        cursor: pointer;
+
+        .icone1 {
+            opacity: 0;
+        }
+
+        .icone2 {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+    }
+
     &__icone {
         .icone1 {
             font-size: 20px;
             z-index: 1;
-
-            &:hover {
-                display: none;
-            }
         }
 
         .icone2 {
             z-index: 10;
             opacity: 0;
-            margin-left: -24px;
-            font-size: 20px;
-
-            &:hover {
-                opacity: 1;
-
-                color: $primaire;
-                cursor: pointer;
-            }
+            right: 23.65px;
+            margin-top: 4.5px;
+            background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+            transition: transform ease-in-out 0.3s;
+            position: absolute;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
         }
     }
 }
@@ -123,7 +131,7 @@ h1 {
     .fa-check {
         opacity: 0;
         transform: rotate(0turn);
-        transition: transform ease-in-out 2s;
+        transition: transform ease-in-out .8s;
     }
 
     .francaise-entrees-check,
@@ -142,7 +150,7 @@ h1 {
         .delices-sens-entrees-check {
             margin-right: 0;
             transform: scalex(1.2) translateX(2%);
-            width: 13%;
+            width: 3rem;
         }
 
         .fa-check {
@@ -224,7 +232,7 @@ h1 {
         .delices-sens-plats-check {
             margin-right: 0;
             transform: scalex(1.2) translateX(2%);
-            width: 13%;
+            width: 3rem;
         }
 
         .fa-check {
@@ -304,7 +312,7 @@ h1 {
         .delices-sens-desserts-check {
             margin-right: 0;
             transform: scalex(1.2) translateX(2%);
-            width: 13%;
+            width: 3rem;
         }
 
         .fa-check {

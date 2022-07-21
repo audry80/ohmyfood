@@ -1,14 +1,15 @@
 //index icones chiffres
 @mixin icones-chiffres {
     background-color: #{$primaire};
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 30px;
     border: 2px solid #{$primaire};
-    padding: 0 4px;
-    display: flex;
+    padding: 4px 5px 1px 5px;
+   display: flex;
     align-items: center;
-    color: #{$quatro};
-    margin-left: -35px;
+    color: #{$quatro};   
+    margin: 20px -5px 40px -7px;
+   
 }
 
 //index images
@@ -85,9 +86,10 @@
     width: 8%;
     text-align: center;   
     transform: scalex(0);
-    transition: all 2s;
+    transition: all 1s;
     transform-origin: right 45%;
     margin-right: -13%;
+    
 }
 
 @mixin fa-check {
@@ -98,5 +100,6 @@
     color: #99E2D0;
     opacity: 1;
     transform: rotate(1turn);
+    
 }
 

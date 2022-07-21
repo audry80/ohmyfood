@@ -1,25 +1,30 @@
 .index-aside__button {
-   background-color: rgb(173 42 171 / 67%);
-   border: 2px solid rgb(195 51 193 / 0%);   
+   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+   border: none;
    border-radius: 30px;
    color: $quatro;
-   padding: 10px;
+   padding: 15px 35px 15px 35px;
    cursor: pointer;
    font-weight: bold;
    text-decoration: none;
-   box-shadow: 0px 0px 9px 3px rgb(183 4 180 / 35%);
-   &:hover{
-      box-shadow: inset -18px -13px 7px 0px rgb(147 106 165 / 64%);
+   z-index: 0;
+   position: relative;
+   transition: 0.1s;
+   box-shadow: 0px 10px 10px 0px #80808047;
+
+   &:hover {
+      z-index: 1;
+      opacity: 0.8;
+      box-shadow: 0px 10px 10px 0px grey;
    }
 }
-.button-menu{
-   display: flex; 
+
+.button-menu {
+   display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .button {
-   @extend .index-aside__button;  
-   padding: 10px 35px 10px 35px;
+   @extend .index-aside__button;   
 }
-
