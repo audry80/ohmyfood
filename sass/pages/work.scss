@@ -1,4 +1,17 @@
-.chargement {
+.loader-position{
+     //placement     
+     position: fixed;
+     top: 0;
+     left: 0;    
+     width: 100%;
+     height:100%;
+     background-color: beige;
+     z-index: 20;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
     //texte
     border: 10px solid transparent;
     display: flex;
@@ -19,14 +32,7 @@
     -webkit-animation: spin 3s linear infinite;
     -o-animation: spin 3s linear infinite;
     animation: spin ease-in-out 3s linear infinite;
-
-    //placement
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    animation-fill-mode: forwards;   
 
     //animation
     @keyframes spin {
@@ -34,8 +40,13 @@
             transform: rotate(0deg) scale(-1);
         }
 
-        100% {
+        99.99% {
             transform: rotate(360deg) scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
         }
     }
 
