@@ -1,1 +1,19 @@
-/*# sourceMappingURL=work.css.map */
+.chargement {
+  border: 10px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 10px solid pink;
+  border-bottom: 10px solid primaire;
+  border-radius: 50%;
+  width: 400px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=work.css.map */

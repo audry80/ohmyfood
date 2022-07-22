@@ -213,7 +213,7 @@ h1 {
     .fa-check {
         opacity: 0;
         transform: rotate(0turn);
-        transition: transform ease-in-out 2s;
+        transition: transform ease-in-out .8s;
     }
 
     .francaise-plats-check,
@@ -293,7 +293,8 @@ h1 {
     .fa-check {
         opacity: 0;
         transform: rotate(0turn);
-        transition: transform ease-in-out 2s;
+        transition: transform ease-in-out .8s;
+        
     }
 
     .francaise-desserts-check,
@@ -301,6 +302,7 @@ h1 {
     .palette-gout-desserts-check,
     .delices-sens-desserts-check {
         @include check-hover;
+            
     }
 
     &:hover {
@@ -313,6 +315,7 @@ h1 {
             margin-right: 0;
             transform: scalex(1.2) translateX(2%);
             width: 3rem;
+           
         }
 
         .fa-check {
