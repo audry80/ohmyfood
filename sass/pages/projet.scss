@@ -25,6 +25,9 @@
         height: 50px;
         background-color: $quatro;
         border-radius: 0px 0px 20px 20px; 
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         &:hover {
             cursor: pointer;
@@ -41,7 +44,7 @@
     }
 
     &__bloc-text h3 {
-        margin-bottom: -15px;
+        margin-bottom: -15px;        
     }
 }
 
@@ -57,11 +60,12 @@
         right: 23.65px;
         margin-top: 4.5px;
         background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-        transition: transform ease-in-out 0.3s;
+       transition: transform ease-in-out 1s;
         position: absolute;
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+        
     }
 }
 
@@ -78,8 +82,6 @@
     left: 68%;
 }
 
-
-
 //charonne
 .index-charonne-figure {
     @extend .index-menilmontant-figure;
@@ -90,7 +92,7 @@
 }
 
 .index-charonne-figure__bloc-text h3 {
-    margin-bottom: -15px;
+    margin-bottom: -15px;    
 }
 
 .index-charonne-figure__icone {
@@ -107,7 +109,7 @@
 }
 
 .index-cite-rouge-figure__bloc-text h3 {
-    margin-bottom: -15px;
+    margin-bottom: -15px;    
 }
 
 .index-cite-rouge-figure__icone {
@@ -124,7 +126,7 @@
 }
 
 .index-folie-mericourt-figure__bloc-text h3 {
-    margin-bottom: -15px;
+    margin-bottom: -15px;    
 }
 
 .index-folie-mericourt-figure__icone {

@@ -54,8 +54,10 @@
 @mixin menu-bloc {
     width: 100%;
     margin-right: 0%;
-    transition: all ease-in-out 3s;
-
+    transition: all ease-in-out 3s;     
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
 }
 
 @mixin paragraphe {
@@ -65,15 +67,22 @@
 
 @mixin paragraphe-p {
     margin: 5px 0 10px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 @mixin paragraphe-span {
     margin-right: $margin +10px;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 @mixin titre {
     margin: 5px 0 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 @mixin check-hover {
