@@ -21,20 +21,7 @@ h1 {
 .palette-gout-menu,
 .enchantee-menu,
 .delices-sens-menu {
-    @include menu-titre;
-
-    &:hover {
-        cursor: pointer;
-
-        .icone1 {
-            opacity: 0;
-        }
-
-        .icone2 {
-            opacity: 1;
-            transform: scale(1.5);
-        }
-    }
+    @include menu-titre;   
 
     &__icone {
         .icone1 {
@@ -54,13 +41,34 @@ h1 {
             -webkit-background-clip: text;
             background-clip: text;
         }
+        &:hover {
+            cursor: pointer;
+    
+            .icone1 {
+                opacity: 0;
+            }
+    
+            .icone2 {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    &__titre{
+      @extend  %font-family-titre;
+      font-weight: 500;
     }
 }
 
 
-.francaise-titre:hover {
+.francaise-titre{
     border-bottom: solid 3px $tertiaire;
-    width: 8%
+    width: 12%;
+    font-weight: lighter;
+    color: hwb(0deg 43% 57%);
+    font-size: 1.1em;
+    padding-bottom: 4px;
 }
 
 #conteneur-enchantee {
