@@ -226,9 +226,11 @@ body {
 
 .francaise-titre {
   border-bottom: solid 3px #99E2D0;
-  width: 8%;
+  width: 12%;
   font-weight: lighter;
   color: hwb(0deg 43% 57%);
+  font-size: 1.1em;
+  padding-bottom: 4px;
 }
 
 #conteneur-enchantee {
